@@ -11,4 +11,11 @@ function checkForm(event) {
 			"НУ ТУТ ПО УМОВІ КРЧ МАЄ ВИВОДИТИСЬ АЛЕРТ З ТИМ ЩОБ МИ ВСІ ПОЛЯ ЗАПОВНИЛИ"
 		);
 	}
+
+	const userData = {
+		login: email.value,
+		password: password.value,
+	};
+	console.log(userData);
+	event.currentTarget.reset();
 }
