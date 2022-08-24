@@ -9,7 +9,7 @@ function checkLength(event) {
 	if (input.value.length === inputTextLength) {
 		inputText.classList.remove("invalid");
 		inputText.classList.add("valid");
-	} else {
+	} else if (input.value.length !== inputTextLength) {
 		inputText.classList.remove("valid");
 		inputText.classList.add("invalid");
 	}
